@@ -1,0 +1,23 @@
+{
+    "firstName": "Guruprasad",
+    "lastName": "Singirikonda",
+    "gender": "man",
+    "age": 26,
+    "Career": {
+        "Designation": "DevOps",
+        "Experience": "4+",
+        "Cloud": "AWS"
+    },
+    "address": {
+        "streetAddress": "Al Barsha A",
+        "city": "Dubai",
+        "state": "UAE",
+        "postalCode": "72236"
+    },
+    "phoneNumbers": [
+        { "type": "home", "number": "+971529679818" }
+    ],
+    "Email": [
+        {"ID": "gmail", "skype": "guruprasad.hd37@gmail.com"}
+    ]
+}
