@@ -10,7 +10,7 @@ Use below steps to see the result:
 
 1. We've two files for the deployment and service.
 
-Creates a service for deployment and following command will deploy.
+Creates a service for deployment and expose to outside world and following command will deploy.
 
 kubectl apply -f profileweb-svc.yml
 
