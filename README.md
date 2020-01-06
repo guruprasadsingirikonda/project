@@ -18,7 +18,7 @@ kubectl apply -f profileweb.yml
 
 kubectl get svc  (you'll find deployment profileweb-svc on which port its running. just put the server IP along with the port will see the page. eg: 10.10.2.1:30130)
 
-By default kubernetes is having high availability for eg: if one of the pod got killed or deleted immediatley another pod will spun up. 
+Deployment is highly available because it has x no.of replicas. eg: if one of the pod got killed or deleted immediatley another pod will spun up. 
 
 In production cases can use HPA for PODS, AutoScaler for Nodes, Metrics-server for monitoring and etc..
 
@@ -26,8 +26,9 @@ Ingress controller:
 
 cd nginx-ingress-controller
 
-Here we've three yaml files related to nignix-ingress and it acts as a loadbalancer(reverse proxy).
-In AWS we use an Elastic Load Balancer (ELB) to expose the NGINX Ingress controller behind a Service of Type=LoadBalancer.
+Here we've three yamls to deploy Nginix-Ingress controller.
+We're exposing Nginix-Ingress controller by creating a service of type "loadbalancer".
+In casde of AWS, it will be  an Elastic Load Balancer (ELB) to expose the NGINX Ingress controller behind a Service of Type=LoadBalancer.
 
 1. mandatory yaml is used get ingress-controller and deployment stuff.
 2. service yaml is used to specify the loadbalancer type and port.
